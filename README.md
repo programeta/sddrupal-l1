@@ -27,7 +27,7 @@ Esa instrucción hace que Codex:
 - alinee DDEV, Composer, Drush y CI,
 - y genere la configuración adecuada según el host detectado.
 
-En `greenfield`, la instalación debe usar la última versión estable de Drupal CMS y el `name` de DDEV debe derivarse del nombre de la carpeta actual del proyecto.
+En `greenfield`, la instalación debe usar la última versión estable de Drupal CMS. El `name` de DDEV debe derivarse del nombre de la carpeta actual del proyecto, levantar el entorno con `ddev start` e instalar Drupal CMS dentro de DDEV con `composer create-project drupal/cms`.
 
 ## Uso
 

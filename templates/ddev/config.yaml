@@ -1,4 +1,5 @@
 # Sustituir por el nombre de la carpeta actual del proyecto al aplicar la L1.
+# El generador debe resolver este valor desde el basename del directorio del proyecto.
 name: "{{project_dir_name}}"
 type: drupal11
 php_version: "8.5"
