@@ -1,0 +1,38 @@
+stages:
+  - build
+  - lint
+  - test
+
+build:
+  script:
+    - composer install --no-interaction --prefer-dist
+    - composer validate --no-check-all
+
+lint:
+  script:
+    - |
+      php_files=$(find . -type f -name '*.php' \
+        -not -path './vendor/*' \
+        -not -path './web/core/*' \
+        -not -path './web/modules/contrib/*' \
+        -not -path './web/themes/contrib/*' \
+        -not -path './web/profiles/contrib/*' \
+        -not -path './web/sites/default/files/*')
+      if [ -z "$php_files" ]; then
+        echo "No PHP files to check"
+        exit 0
+      fi
+      set +e
+      vendor/bin/phpcs --standard=phpcs.xml.dist $php_files
+      vendor/bin/phpcbf --standard=phpcs.xml.dist $php_files
+      vendor/bin/phpcs --standard=phpcs.xml.dist $php_files
+      exit $?
+
+test:
+  script:
+    - |
+      if [ -f phpunit.xml ] || [ -f phpunit.xml.dist ] || [ -d tests ]; then
+        vendor/bin/phpunit
+      else
+        echo "No tests available, skipping"
+      fi
