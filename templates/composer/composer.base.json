@@ -1,0 +1,7 @@
+{
+  "require": {
+    "drupal/core-recommended": "^11",
+    "drupal/core-composer-scaffold": "^11",
+    "drupal/core-project-message": "^11"
+  }
+}
