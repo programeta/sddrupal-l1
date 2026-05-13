@@ -3,7 +3,7 @@
 ## Greenfield
 - Drupal CMS
 - PHP 8.5 como baseline de instalación nueva
-- Usar la capa de recetas/distribución de Drupal CMS
+- Usar la capa de recetas/distribución de Drupal CMS en su última versión estable
 
 ## Brownfield
 - Mantener la versión existente de Drupal

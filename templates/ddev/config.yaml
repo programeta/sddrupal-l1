@@ -1,4 +1,5 @@
-name: drupal-project
+# Sustituir por el nombre de la carpeta actual del proyecto al aplicar la L1.
+name: "{{project_dir_name}}"
 type: drupal11
 php_version: "8.5"
 webserver_type: nginx-fpm
