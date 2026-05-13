@@ -1,0 +1,8 @@
+version: 1.0.0
+layer: L1
+compatible_with:
+  drupal:
+    - 10
+    - 11
+    - CMS
+last_updated: 2026-05-13
