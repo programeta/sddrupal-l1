@@ -4,8 +4,9 @@
 - Drupal CMS
 - PHP 8.5 como baseline de instalación nueva
 - Usar la capa de recetas/distribución de Drupal CMS en su última versión estable
+- DDEV es obligatorio en local; si no hay acceso, no se puede avanzar
 - Levantar DDEV con el nombre derivado de la carpeta actual del proyecto
-- Instalar Drupal CMS dentro de DDEV con `composer create-project drupal/cms`
+- Instalar Drupal CMS dentro de DDEV en una carpeta temporal y llevar el resultado a la raíz del proyecto
 
 ## Brownfield
 - Mantener la versión existente de Drupal
