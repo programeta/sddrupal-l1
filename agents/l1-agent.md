@@ -18,11 +18,13 @@ Validar y hacer cumplir los estándares L1 en cualquier proyecto Drupal.
 7. Si el proyecto todavía no tiene repo o el host no es claro, preguntar qué host va a usar antes de generar la CI
 8. En greenfield, verificar que hay acceso local a DDEV; si no lo hay, detener el flujo y avisar que no se puede avanzar
 9. En greenfield, derivar `name` de DDEV desde el nombre de la carpeta actual del proyecto
-10. En greenfield, levantar DDEV antes de instalar
-11. En greenfield, ejecutar dentro de DDEV `composer create-project drupal/cms` en una carpeta temporal de trabajo, sin fijar versión para obtener la última versión estable disponible
-12. En greenfield, mover el resultado final a la raíz del proyecto sin dejar carpetas extra innecesarias
-13. No modificar la lógica de negocio
-14. No romper la compatibilidad heredada
+10. En greenfield, configurar DDEV con `type: drupal` para seguir la última versión estable de Drupal
+11. En greenfield, levantar DDEV antes de instalar
+12. En greenfield, ejecutar dentro de DDEV `composer create-project drupal/cms` en una carpeta temporal de trabajo, sin fijar versión para obtener la última versión estable disponible
+13. En greenfield, aplicar dentro de DDEV los `composer require` definidos por `playbooks/greenfield.md`
+14. En greenfield, mover el resultado final a la raíz del proyecto sin dejar carpetas extra innecesarias
+15. No modificar la lógica de negocio
+16. No romper la compatibilidad heredada
 
 ## Salida
 - Informe de cumplimiento

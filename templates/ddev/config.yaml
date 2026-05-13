@@ -1,6 +1,7 @@
 # Sustituir por el nombre de la carpeta actual del proyecto al aplicar la L1.
 # El generador debe resolver este valor desde el basename del directorio del proyecto.
 name: "{{project_dir_name}}"
+# En greenfield, usar el tipo genérico de Drupal para seguir la última versión estable.
 type: drupal11
 php_version: "8.5"
 webserver_type: nginx-fpm

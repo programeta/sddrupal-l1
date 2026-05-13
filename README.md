@@ -27,7 +27,7 @@ Esa instrucción hace que Codex:
 - alinee DDEV, Composer, Drush y CI,
 - y genere la configuración adecuada según el host detectado.
 
-En `greenfield`, la instalación debe usar la última versión estable de Drupal CMS. DDEV es obligatorio en local: si no hay acceso, no se puede avanzar. El `name` de DDEV debe derivarse del nombre de la carpeta actual del proyecto, levantar el entorno con `ddev start` e instalar Drupal CMS dentro de DDEV usando una carpeta temporal de trabajo, para luego dejar el resultado final en la raíz del proyecto sin carpetas extra innecesarias.
+En `greenfield`, la instalación debe usar la última versión estable de Drupal CMS. DDEV es obligatorio en local: si no hay acceso, no se puede avanzar. El `name` de DDEV debe derivarse del nombre de la carpeta actual del proyecto, el `type` debe ser `drupal` para seguir la versión estable más reciente, levantar el entorno con `ddev start`, instalar Drupal CMS dentro de DDEV usando una carpeta temporal de trabajo y después aplicar los `composer require` definidos por el playbook para dejar el resultado final en la raíz del proyecto sin carpetas extra innecesarias.
 
 ## Uso
 
