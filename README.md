@@ -17,8 +17,15 @@ Este L1 sirve para arrancar y validar la base técnica de un proyecto Drupal. En
 Si es la primera vez que lo vas a aplicar con Codex, usa una instrucción como esta:
 
 ```text
-Aplica la L1 a este repositorio: detecta si es greenfield o brownfield, valida Drupal y PHP, alinea DDEV, Composer, Drush y CI, y genera la configuración adecuada según el host detectado.
+Aplica la L1 a este repositorio.
 ```
+
+Esa instrucción hace que Codex:
+
+- detecte si es `greenfield` o `brownfield`,
+- valide Drupal y PHP,
+- alinee DDEV, Composer, Drush y CI,
+- y genere la configuración adecuada según el host detectado.
 
 ## Uso
 
