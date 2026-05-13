@@ -7,7 +7,7 @@ Este repositorio define los estándares de plataforma/runtime (L1) para proyecto
 Clónalo dentro de cualquier proyecto:
 
 ```bash
-git clone git@github.com:programeta/sddrupal.git .sd/l1
+git clone https://github.com/programeta/sddrupal-l1.git .sd/l1
 ```
 
 ## CI
