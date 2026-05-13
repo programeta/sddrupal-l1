@@ -4,11 +4,21 @@ Este repositorio define los estándares de plataforma/runtime (L1) para proyecto
 
 Este `L1` forma parte de una ingeniería más amplia que también contempla `L2` y `L3`, todavía definidos como `TBD`. El objetivo es dar contexto de que este kit no es un bloque aislado, sino una pieza de una arquitectura por capas.
 
+Este L1 sirve para arrancar y validar la base técnica de un proyecto Drupal. En un `greenfield` prepara la instalación nueva, el runtime, DDEV, Composer, CI y Drush. En un `brownfield` detecta la versión real de Drupal y PHP ya existente y se alinea a esa base sin romper compatibilidad.
+
 ## Capas
 
 - `L1`: infraestructura, runtime y CI.
 - `L2`: ingeniería de la app.
 - `L3`: dominio, contenido y APIs.
+
+## Primer Uso Con Codex
+
+Si es la primera vez que lo vas a aplicar con Codex, usa una instrucción como esta:
+
+```text
+Aplica la L1 a este repositorio: detecta si es greenfield o brownfield, valida Drupal y PHP, alinea DDEV, Composer, Drush y CI, y genera la configuración adecuada según el host detectado.
+```
 
 ## Uso
 
