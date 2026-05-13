@@ -1,0 +1,7 @@
+name: drupal-project
+type: drupal11
+php_version: "8.5"
+webserver_type: nginx-fpm
+database:
+  type: mariadb
+  version: "10.6"
